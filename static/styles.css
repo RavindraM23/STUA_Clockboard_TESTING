@@ -48,6 +48,13 @@ div.animation {
     margin-right: -20vw;
 }
 
+div.smallBox {
+    height: 100%;
+    float: left;
+    width: 25%;
+    padding-bottom: 0.5%;
+}
+
 @keyframes marquee {
     0% { transform: translateX(100%); }
     40% { transform: translateX(0%);}
