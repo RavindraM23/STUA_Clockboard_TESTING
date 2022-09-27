@@ -1,0 +1,56 @@
+@font-face {
+    font-family: helveticaLight;
+    src: url("helvetica-light.ttf");
+}
+
+@font-face {
+    font-family: standardMediumCondensed;
+    src: url("standard-medium-condensed.otf");
+}
+
+@font-face {
+    font-family: standardMedium;
+    src: url("standard-medium.otf");
+}
+
+div.time {
+    height:50%; 
+    margin-left: 15.5vh;
+}
+
+div.terminus {
+    height:50%; 
+    margin-left: 15.5vh;
+}
+
+h1.time {
+    font-family: standardMedium;
+    font-size: 3.45vw;
+    margin-left: -2%;
+}
+
+h1.terminus {
+    /*white-space: nowrap;*/
+    font-family: standardMedium;
+    font-size: 3.45vw;
+    margin-left: -2%;
+    /* animation: marquee 6s linear infinite; */
+}
+
+h1.animation {
+    white-space: nowrap;
+    animation: marquee linear infinite;
+    animation-duration: 10s;
+}
+
+div.animation {
+    overflow: hidden;
+    margin-right: -20vw;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    40% { transform: translateX(0%);}
+    60% { transform: translateX(0%);}
+    100% { transform: translateX(-105%); }
+}

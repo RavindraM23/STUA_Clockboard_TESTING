@@ -58,11 +58,10 @@ pygame.display.update()
 
 def percent_update(percent):
     if percent == 0:
-        bar = pygame.draw.rect(screen, "#ffffff", pygame.Rect(width/3.25, width/3.25, 1*(height/0.86), height/22))
+        bar = pygame.draw.rect(screen, "#ffffff", pygame.Rect(width/3.25, width/3.10, 1*(height/0.86), height/22))
     else:
-        bar = pygame.draw.rect(screen, "#000000", pygame.Rect(width/3.25, width/3.25, percent*(height/0.86), height/22))
+        bar = pygame.draw.rect(screen, "#000000", pygame.Rect(width/3.25, width/3.10, percent*(height/0.86), height/22))
         pygame.display.update(bar)
-
 """
 seventhup = [gtfsSubway(),gtfsSubway(),gtfsSubway(),gtfsSubway(),gtfsSubway()]
 seventhdown = [gtfsSubway(),gtfsSubway(),gtfsSubway(),gtfsSubway(),gtfsSubway()]
