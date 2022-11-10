@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/styles.css">
+	<!-- <script src="scripts.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script>
+	var source = new EventSource("/broadway");
+	source.onmessage = function(event) {
+		$('#broadway').html(event.data);
+	}
+	</script> -->
+</head>
+
+<body style="background-color: aqua; height: 100vh; width: 100vw; margin: 0px; overflow: hidden;">
+    <div style="background-color: #ffff00; width: 100%; height: 85%;">
+		<div style="background-color: indigo; width: 50%; height: 100%; float: left; margin: 0%;">
+			<div style="background-color: aliceblue; width: 100%; height: 19%;">
+				<div style="background-color: #e8e8e8; width: 20%; height: 100%; float: left; display: flex; align-items: center; justify-content: center;">
+					<img src="/static/svg/2.svg" style="height: 97%;">
+				</div>
+				<div style="background-color: red; width: 80%; height: 100%; float: right;">
+					<div style="background-color: #e8e8e8; height: 50%; width: 100%; display: flex; align-items: center;">
+						<h1 class="terminus" style="float: left; margin-left: 5px; margin-top: 2.5%;">3 minutes</h1>
+					</div>
+					<div id="uptown_seventh_terminus_DIV" style="background-color: #e8e8e8; height: 50%; width: 100%;">
+						<h1 id="uptown_seventh_terminus_H1" class="terminus" style="float: left; margin-left: 5px;">Wakefield-241 St</h1>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: #ffffff; width: 100%; height: 1%;"></div>
+			<div style="background-color: aliceblue; width: 100%; height: 19%;">
+				<div style="background-color: #e8e8e8; width: 20%; height: 100%; float: left; display: flex; align-items: center; justify-content: center;">
+					<img src="/static/svg/1.svg" style="height: 97%;">
+				</div>
+				<div style="background-color: red; width: 80%; height: 100%; float: right;">
+					<div style="background-color: #e8e8e8; height: 50%; width: 100%; display: flex; align-items: center;">
+						<h1 class="terminus" style="float: left; margin-left: 5px; margin-top: 2.5%;">11 minutes</h1>
+					</div>
+					<div id="downtown_seventh_terminus_DIV" style="background-color: #e8e8e8; height: 50%; width: 100%;">
+						<h1 id="downtown_seventh_terminus_H1" class="terminus" style="float: left; margin-left: 5px;">South Ferry</h1>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: white; width: 100%; height: 1%;"></div>
+			<div style="background-color: aliceblue; width: 100%; height: 19%;">
+				<div style="background-color: #e8e8e8; width: 20%; height: 100%; float: left; display: flex; align-items: center; justify-content: center;">
+					<img src="/static/svg/a.svg" style="height: 97%;">
+				</div>
+				<div style="background-color: red; width: 80%; height: 100%; float: right;">
+					<div style="background-color: #e8e8e8; height: 50%; width: 100%; display: flex; align-items: center;">
+						<h1 class="terminus" style="float: left; margin-left: 5px; margin-top: 2.5%;">3 minutes</h1>
+					</div>
+					<div id="uptown_eighth_terminus_DIV" style="background-color: #e8e8e8; height: 50%; width: 100%;">
+						<h1 id="uptown_eighth_terminus_H1" class="terminus" style="float: left; margin-left: 5px;">Inwood-207 St</h1>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: white; width: 100%; height: 1%;"></div>
+			<div style="background-color: aliceblue; width: 100%; height: 19%;">
+				<div style="background-color: #e8e8e8; width: 20%; height: 100%; float: left; display: flex; align-items: center; justify-content: center;">
+					<img src="/static/svg/a.svg" style="height: 97%;">
+				</div>
+				<div style="background-color: red; width: 80%; height: 100%; float: right;">
+					<div style="background-color: #e8e8e8; height: 50%; width: 100%; display: flex; align-items: center;">
+						<h1 class="terminus" style="float: left; margin-left: 5px; margin-top: 2.5%;">5 minutes</h1>
+					</div>
+					<div id="downtown_eighth_terminus_DIV" style="background-color: #e8e8e8; height: 50%; width: 100%;">
+						<h1 id="downtown_eighth_terminus_H1" class="terminus" style="float: left; margin-left: 5px;">Ozone Park-Lefferts Blvd</h1>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: white; width: 100%; height: 1%;"></div>
+			<div style="background-color: aliceblue; width: 100%; height: 20%;">
+				<div style="background-color: #dddddd; width: 20%; height: 100%; float: left; display: flex; align-items: center; justify-content: center;">
+					<img src="/static/svg/w.svg" style="height: 97%;">
+				</div>
+				<div style="background-color: red; width: 55%; height: 100%; float: left;">
+					<div style="background-color: #dddddd; height: 50%; width: 100%; display: flex; align-items: center;">
+						<h1 class="terminus" style="float: left; margin-left: 5px; margin-top: 2.5%;">24 minutes</h1>
+					</div>
+					<div id="uptown_broadway_terminus_DIV" style="background-color: #dddddd; height: 50%; width: 100%;">
+						<h1 id="uptown_broadway_terminus_H1" class="terminus" style="float: left; margin-left: 5px;">Forest Hills-71 Av</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #cccccc; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/n.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #cccccc; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 6%;">12m</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="background-color: lawngreen; width: 50%; height: 100%; float: right; margin: 0%;">
+			<div style="background-color: blue; width: 100%; height: 19%;">
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #dddddd; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/2.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #dddddd; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">4m</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #cccccc; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/1.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #cccccc; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">12m</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #bbbbbb; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/3.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #bbbbbb; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">4m</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #aaaaaa; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/4.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #aaaaaa; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">12m</h1>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: white; width: 100%; height: 1%;"></div>
+			<div style="background-color: blue; width: 100%; height: 19%;">
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #dddddd; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/1.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #dddddd; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">4m</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #cccccc; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/2.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #cccccc; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">12m</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #bbbbbb; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/1.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #bbbbbb; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">4m</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #aaaaaa; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/3.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #aaaaaa; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">12m</h1>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: white; width: 100%; height: 1%;"></div>
+			<div style="background-color: blue; width: 100%; height: 19%;">
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #dddddd; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/fx.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #dddddd; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">4m</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #cccccc; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/c.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #cccccc; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">12m</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #bbbbbb; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/f.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #bbbbbb; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">4m</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #aaaaaa; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/a.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #aaaaaa; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">12m</h1>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: white; width: 100%; height: 1%;"></div>
+			<div style="background-color: blue; width: 100%; height: 19%;">
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #dddddd; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/a.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #dddddd; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">4m</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #cccccc; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/a.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #cccccc; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">12m</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #bbbbbb; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/c.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #bbbbbb; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">4m</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #aaaaaa; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/a.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #aaaaaa; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">12m</h1>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: white; width: 100%; height: 1%;"></div>
+			<div style="background-color: aliceblue; width: 100%; height: 20%;">
+				<div style="background-color: #bbbbbb; width: 20%; height: 100%; float: left; display: flex; align-items: center; justify-content: center;">
+					<img src="/static/svg/r.svg" style="height: 97%;">
+				</div>
+				<div style="background-color: red; width: 55%; height: 100%; float: left;">
+					<div style="background-color: #bbbbbb; height: 50%; width: 100%; display: flex; align-items: center;">
+						<h1 class="terminus" style="float: left; margin-left: 5px; margin-top: 2.5%;">24 minutes</h1>
+					</div>
+					<div id="downtown_broadway_terminus_DIV" style="background-color: #bbbbbb; height: 50%; width: 100%;">
+						<h1 id="downtown_broadway_terminus_H1" class="terminus" style="float: left; margin-left: 5px;">Bay Ridge-95 St</h1>
+					</div>
+				</div>
+				<div style="background-color: orange; float: left; height: 100%; width: 25%;">
+					<div style="background-color: #aaaaaa; height: 45%; width: 100%; display: flex; align-items: center;">
+						<img src="/static/svg/n.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;"><h1 class="branch" style="visibility: hidden">OP</h1>
+					</div>
+					<div style="background-color: #aaaaaa; height: 55%; width: 100%; display: flex; align-items: center;">
+						<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 6%;">12m</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="background-color: white; width: 100%; height: 1%;"></div>
+	<div style="background-color: blue; width: 100%; height: 14%; white-space: nowrap;">
+		<div style="background-color: orange; float: left; height: 100%; width: 12.5%;">
+			<div style="background-color: #e8e8e8; height: 45%; width: 100%; display: flex; align-items: center;">
+				<img src="/static/svg/z.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;">
+			</div>
+			<div style="background-color: #e8e8e8; height: 55%; width: 100%; display: flex; align-items: center;">
+				<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">4m</h1>
+			</div>
+		</div>
+		<div style="background-color: orange; float: left; height: 100%; width: 12.5%;">
+			<div style="background-color: #dddddd; height: 45%; width: 100%; display: flex; align-items: center;">
+				<img src="/static/svg/j.svg" style="height: 90%; margin-left: 7px; margin-top: 5%;">
+			</div>
+			<div style="background-color: #dddddd; height: 55%; width: 100%; display: flex; align-items: center;">
+				<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%;">12m</h1>
+			</div>
+		</div>
+		<div style="background-color: orange; float: left; height: 100%; width: 12.5%;">
+			<div style="background-color: black; height: 45%; width: 100%; display: flex; align-items: center;">
+				<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 8%; color: white;">Q10</h1>
+			</div>
+			<div style="background-color: black; height: 55%; width: 100%; display: flex; align-items: center;">
+				<h1 class="bus" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%; color: white;">12, 24m</h1>
+			</div>
+		</div>
+		<div style="background-color: orange; float: left; height: 100%; width: 12.5%;">
+			<div style="background-color: #2b2b2b; height: 45%; width: 100%; display: flex; align-items: center;">
+				<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 8%; color: white;">M4</h1>
+			</div>
+			<div style="background-color: #2b2b2b; height: 55%; width: 100%; display: flex; align-items: center;">
+				<h1 class="bus" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%; color: white;">2, Xm</h1>
+			</div>
+		</div>
+		<div style="background-color: orange; float: left; height: 100%; width: 12.5%;">
+			<div style="background-color: black; height: 45%; width: 100%; display: flex; align-items: center;">
+				<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 8%; color: white;">Q37</h1>
+			</div>
+			<div style="background-color: black; height: 55%; width: 100%; display: flex; align-items: center;">
+				<h1 class="bus" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%; color: white;">12, 24m</h1>
+			</div>
+		</div>
+		<div style="background-color: orange; float: left; height: 100%; width: 12.5%;">
+			<div style="background-color: #2b2b2b; height: 45%; width: 100%; display: flex; align-items: center;">
+				<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 8%; color: white;">M4</h1>
+			</div>
+			<div style="background-color: #2b2b2b; height: 55%; width: 100%; display: flex; align-items: center;">
+				<h1 class="bus" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%; color: white;">2, Xm</h1>
+			</div>
+		</div>
+		<div style="background-color: orange; float: left; height: 100%; width: 12.5%;">
+			<div style="background-color: black; height: 45%; width: 100%; display: flex; align-items: center;">
+				<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 8%; color: white;">Q37</h1>
+			</div>
+			<div style="background-color: black; height: 55%; width: 100%; display: flex; align-items: center;">
+				<h1 class="bus" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%; color: white;">12, 24m</h1>
+			</div>
+		</div>
+		<div style="background-color: orange; float: left; height: 100%; width: 12.5%;">
+			<div style="background-color: #2b2b2b; height: 45%; width: 100%; display: flex; align-items: center;">
+				<h1 class="time" style="float: left; margin: 0px; margin-left: 10px; margin-top: 8%; color: white;">M4</h1>
+			</div>
+			<div style="background-color: #2b2b2b; height: 55%; width: 100%; display: flex; align-items: center;">
+				<h1 class="bus" style="float: left; margin: 0px; margin-left: 10px; margin-top: 3.5%; color: white;">2, Xm</h1>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+
+	var textWidth_uptown_eighth = document.getElementById("uptown_eighth_terminus_H1")
+    var divWidth_uptown_eighth = document.getElementById("uptown_eighth_terminus_DIV")
+
+	var textWidth_downtown_eighth = document.getElementById("downtown_eighth_terminus_H1")
+    var divWidth_downtown_eighth = document.getElementById("downtown_eighth_terminus_DIV")
+
+	var textWidth_uptown_seventh = document.getElementById("uptown_seventh_terminus_H1")
+    var divWidth_uptown_seventh = document.getElementById("uptown_seventh_terminus_DIV")
+
+	var textWidth_downtown_seventh = document.getElementById("downtown_seventh_terminus_H1")
+    var divWidth_downtown_seventh = document.getElementById("downtown_seventh_terminus_DIV")
+
+	var textWidth_uptown_broadway = document.getElementById("uptown_broadway_terminus_H1")
+    var divWidth_uptown_broadway = document.getElementById("uptown_broadway_terminus_DIV")
+
+	var textWidth_downtown_broadway = document.getElementById("downtown_broadway_terminus_H1")
+    var divWidth_downtown_broadway = document.getElementById("downtown_broadway_terminus_DIV")
+
+	var imgWidth = document.getElementById("delayIMG")
+	var divWidth = document.getElementById("delayDIV")
+
+	function fixSizing(textWidth, divWidth) {
+
+		if ((textWidth.clientWidth > divWidth.clientWidth) && (Math.abs(textWidth.clientWidth-divWidth.clientWidth) > 10)) {
+			console.log("Overflow " + textWidth.clientWidth + " " + divWidth.clientWidth);
+			textWidth.classList.add("animation")
+			divWidth.classList.add("animation")
+		} else {
+			console.log("Fine " + textWidth.clientWidth + " " + divWidth.clientWidth);
+		}
+
+	}
+
+	function fixSizingIMG(imgWidth, divWidth) {
+		console.log("DELAY SIZE FINE")
+		while ((imgWidth.clientWidth > divWidth.clientWidth) && (Math.abs(imgWidth.clientWidth-divWidth.clientWidth) > 10)) {
+			divWidth.style.height = parseFloat(divWidth.style.height)-1;
+			console.log("DELAY SIZE")
+		}
+	}
+
+	fixSizing(textWidth_uptown_eighth, divWidth_uptown_eighth)
+	fixSizing(textWidth_downtown_eighth, divWidth_downtown_eighth)
+
+	fixSizing(textWidth_uptown_seventh, divWidth_uptown_seventh)
+	fixSizing(textWidth_downtown_seventh, divWidth_downtown_seventh)
+
+	fixSizing(textWidth_uptown_broadway, divWidth_uptown_broadway)
+	fixSizing(textWidth_downtown_broadway, divWidth_downtown_broadway)
+
+	fixSizingIMG(imgWidth, divWidth)
+
+</script>
+
+</html>

@@ -3,14 +3,14 @@ import dotenv, os
 from flask import Flask, render_template, Response
 
 dotenv.load_dotenv()
-stua.keyMTA(os.getenv("NYCT"))#os.getenv("NYCT"))
+stua.keyMTA(os.getenv("NYCT")) #os.getenv("NYCT"))
 stua.keyBUSTIME(os.getenv("BusTime"))
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('main.html')
 
 @app.route('/broadway')
 def broadway():
@@ -23,4 +23,4 @@ def broadway():
     return Response(generate(), mimetype= 'text/event-stream')
 
 if __name__ in "__main__":
-    app.run()
+    app.run(debug=True)

@@ -18,46 +18,51 @@ div.time {
     margin-left: 15.5vh;
 }
 
-div.terminus {
-    height:50%; 
-    margin-left: 15.5vh;
-}
-
 h1.time {
     font-family: standardMedium;
-    font-size: 3.45vw;
-    margin-left: -2%;
+    font-size: 6.95vh
+}
+
+h1.bus {
+    font-family: standardMediumCondensed;
+    font-size: 6.95vh;
 }
 
 h1.terminus {
     /*white-space: nowrap;*/
     font-family: standardMedium;
-    font-size: 3.45vw;
-    margin-left: -2%;
+    font-size: 8vh;
+    white-space: nowrap;
     /* animation: marquee 6s linear infinite; */
+}
+
+h1.delay {
+    font-family: standardMedium;
+    font-size: 5vh
+}
+
+h1.branch {
+    font-family: standardMediumCondensed;
+    font-size: 5vh;
+    color: blue;
+    margin-left: 2%;
+    margin-top: 12%;
 }
 
 h1.animation {
     white-space: nowrap;
     animation: marquee linear infinite;
-    animation-duration: 10s;
+    animation-duration: 8s;
 }
 
 div.animation {
     overflow: hidden;
-    margin-right: -20vw;
-}
-
-div.smallBox {
-    height: 100%;
-    float: left;
-    width: 25%;
-    padding-bottom: 0.5%;
 }
 
 @keyframes marquee {
-    0% { transform: translateX(100%); }
-    40% { transform: translateX(0%);}
-    60% { transform: translateX(0%);}
-    100% { transform: translateX(-105%); }
+    0% { transform: translateX(-25%); }
+    25% { transform: translateX(-25%); }
+    50% { transform: translateX(0%);}
+    75% { transform: translateX(0%);}
+    100% { transform: translateX(-25%); }
 }
